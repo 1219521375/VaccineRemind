@@ -14,9 +14,11 @@ import android.widget.Button;
 import com.allen.library.SuperTextView;
 import com.example.pokestar.vaccineremind.R;
 import com.example.pokestar.vaccineremind.bean.VaccineSql;
-import com.example.pokestar.vaccineremind.ui.activity.DetailMapActivity;
-import com.example.pokestar.vaccineremind.ui.activity.VaccineMapCCActivity;
-import com.example.pokestar.vaccineremind.ui.activity.VaccineMapWHActivity;
+import com.example.pokestar.vaccineremind.ui.activity.visual.DetailMapActivity;
+import com.example.pokestar.vaccineremind.ui.activity.visual.GISMapActivity;
+import com.example.pokestar.vaccineremind.ui.activity.visual.SmoothActivity;
+import com.example.pokestar.vaccineremind.ui.activity.visual.VaccineMapCCActivity;
+import com.example.pokestar.vaccineremind.ui.activity.visual.VaccineMapWHActivity;
 import com.example.pokestar.vaccineremind.utils.ToastUtil;
 import com.rengwuxian.materialedittext.MaterialEditText;
 
@@ -162,9 +164,11 @@ public class VaccineConsultFragment extends BaseFragment {
         openMapButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), DetailMapActivity.class);
+               /** Intent intent = new Intent(getActivity(), DetailMapActivity.class);
                 intent.putExtra("company",output_company.getRightString());
-                startActivity(intent);
+                startActivity(intent);*/
+               Intent intent  = new Intent(getActivity(),SmoothActivity.class);
+               startActivity(intent);
             }
         });
 

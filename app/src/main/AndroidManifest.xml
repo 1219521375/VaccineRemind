@@ -57,25 +57,34 @@
         <activity android:name=".ui.activity.AddBabyActivity" />
         <activity android:name=".ui.activity.AddVaccineActivity" />
         <activity android:name=".ui.activity.MineActivity" />
-        <activity android:name=".ui.activity.VaccineMapCCActivity" />
+        <activity android:name=".ui.activity.visual.VaccineMapCCActivity" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="uBlCkZN6iBsKw0lbQ8nkSWvnGrmjMuMp" />
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="263b38e1a56d6526b16f3b8293bf927b" />
+
+        <!-- 百度定位 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
 
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="uBlCkZN6iBsKw0lbQ8nkSWvnGrmjMuMp" />
 
-        <!--百度定位-->
-        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"/>
-        <meta-data
-            android:name="com.baidu.lbsapi.API_KEY"
-            android:value="uBlCkZN6iBsKw0lbQ8nkSWvnGrmjMuMp" />
-
-        <activity android:name=".ui.activity.VaccineMapWHActivity" />
+        <activity android:name=".ui.activity.visual.VaccineMapWHActivity" />
         <activity android:name=".ui.activity.MyBabyActivity" />
         <activity android:name=".ui.activity.WebNewsActivity" />
         <activity android:name=".ui.activity.VacReferActivity" />
         <activity android:name=".ui.activity.LogoActivity" />
         <activity android:name=".ui.activity.DetailActivity" />
-        <activity android:name=".ui.activity.DetailMapActivity"></activity>
+        <activity android:name=".ui.activity.visual.DetailMapActivity" />
+        <activity android:name=".ui.activity.visual.GISMapActivity" />
+        <activity android:name=".ui.activity.visual.SmoothActivity"></activity>
     </application>
 
 </manifest>

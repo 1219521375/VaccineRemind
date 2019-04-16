@@ -435,6 +435,7 @@ public class VaccineFragment extends BaseFragment {
         if(Configure.getUSERID(getActivity()).equals("")){
             //未登录
             mImageView_baby.setImageResource(R.drawable.baby);
+            mImageView_baby.setScaleType(ImageView.ScaleType.FIT_XY);
             mTextView_baby_data.setText("请登录后添加宝宝！");
 
         }else {

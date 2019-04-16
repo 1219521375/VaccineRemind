@@ -22,4 +22,27 @@
     </string>
     <string name="action_settings">Settings</string>
 
+    <string name="us_census_feature_service">https://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer/3</string>
+    <string name="total_population">Total Population</string>
+    <string name="population_density">Population Density</string>
+    <string name="world_elevation_service_url">http://elevation3d.arcgis.com/arcgis/rest/services/WorldElevation3D/Terrain3D/ImageServer</string>
+    <string-array name="missions">
+        <item>GrandCanyon.csv</item>
+        <item>Hawaii.csv</item>
+        <item>Pyrenees.csv</item>
+        <item>Snowdon.csv</item>
+    </string-array>
+    <string name="altitude">海拔高度</string>
+    <string name="heading">头指向</string>
+    <string name="pitch">俯仰角</string>
+    <string name="roll">横摆角</string>
+    <string name="mission_progress">Mission Progress</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="follow">Follow</string>
+    <string name="free_cam">Free Cam</string>
+    <string name="speed">Speed</string>
+    <string name="bristol_model">plane.dae</string>
+    <string name="bristol_skin">Bristol.png</string>
+
 </resources>

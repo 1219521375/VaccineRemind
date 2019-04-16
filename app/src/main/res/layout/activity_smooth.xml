@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+    <Button
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第一阶段演示"
+        android:clickable="true"
+        android:onClick="one_state"/>
+
+    <Button
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/one"
+        android:layout_marginLeft="12dp"
+        android:text="第二阶段演示"
+        android:clickable="true"
+        android:onClick="two_state"/>
+    <Button
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/two"
+        android:layout_marginLeft="12dp"
+        android:text="第三阶段演示"
+        android:clickable="true"
+        android:onClick="three_state"/>
+
+
+
+
+
+</RelativeLayout>

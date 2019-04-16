@@ -34,9 +34,15 @@ android {
             //说明so的路径为该libs路径，关联所有地图SDK的so文件
         }
     }
+    // *** ADD ***
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
 
 }
-
 
 
 dependencies {
@@ -59,7 +65,6 @@ dependencies {
     compile 'com.lzy.widget:imagepicker:0.6.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
 
-
     //以下SDK开发者请根据需要自行选择
     //bmob-sdk：Bmob的android sdk包，包含了Bmob的数据存储、文件等服务，以下是最新的bmob-sdk:
     //3.5.5：请务必查看下面注释[1]
@@ -75,4 +80,6 @@ dependencies {
     compile 'cn.bmob.android:http-legacy:1.0'
     compile 'cn.jiguang.sdk:jpush:3.1.6'  // 此处以JPush 3.1.6 版本为例。
     compile 'cn.jiguang.sdk:jcore:1.2.5'  // 此处以JCore 1.2.5 版本为例。
+    implementation 'com.esri.arcgisruntime:arcgis-android:100.5.0'
+    //compile 'com.amap.api:3dmap:latest.integration'//高德3d
 }

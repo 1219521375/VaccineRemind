@@ -33,6 +33,15 @@ public class CircleImageView extends android.support.v7.widget.AppCompatImageVie
 
     }
 
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+
+        int ratioW = MeasureSpec.getSize(widthMeasureSpec);
+        int ratioH = MeasureSpec.getSize(heightMeasureSpec);//根据宽来计算高
+        super.onMeasure(MeasureSpec.makeMeasureSpec(ratioW, MeasureSpec.EXACTLY),
+                MeasureSpec.makeMeasureSpec(ratioH, MeasureSpec.EXACTLY));
+    }
+
     /**
      * 绘制圆形图片
      * @author caizhiming
